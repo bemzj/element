@@ -31,7 +31,7 @@ $(function(){
 	});
 	//生成回执
 	$('.page5').find('button').on('click',function(){
-		$('.swiper-container').hide();
+		$('.page5').hide();
 		$('#page6').show();
 		$('.img61').addClass('animated fadeInDown');
 		$('.img62').find('img').addClass('animated bounceIn');
@@ -44,10 +44,10 @@ $(function(){
 		
 	});
 	//如果已经签到
-	var has = false;
+	var has = true;
 	if(has==true)
 	{
-		$('.swiper-container').hide();
+		$('.page5').hide();
 		$('#page6').show();
 		$('.img61').addClass('animated fadeInDown');
 		$('.img62').find('img').addClass('animated bounceIn');

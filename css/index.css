@@ -276,7 +276,7 @@ body {
     opacity: 0; }
 
 #page6 {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -312,7 +312,7 @@ body {
       text-align: center;
       letter-spacing: 0.08rem; }
   #page6 .p61 {
-    width: 67.47%;
+    width: 68%;
     margin: 0 auto;
     font-size: 0.2rem;
     color: white; }
