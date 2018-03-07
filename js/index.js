@@ -8,6 +8,25 @@ $(function(){
 		{
 			clearInterval(tTween);
 			$('#loading').fadeOut(500);
+			var swiper = new Swiper('.swiper-container', {
+		        direction: 'vertical',
+		        initialSlide :0,
+		         onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+				    swiperAnimateCache(swiper); //隐藏动画元素 
+				    swiperAnimate(swiper); //初始化完成开始动画
+				    $('.down').on('click',function(){
+				    	swiper.slideNext();
+				    });
+				  }, 
+				  onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				    if(swiper.isEnd){
+				    	$('.down').hide();
+				    }else{
+				    	$('.down').show();
+				    }
+				  } 
+		    });
 		}else{
 			if(time%20==0)
 			{

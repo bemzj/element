@@ -66,9 +66,20 @@ body {
   position: relative; }
   .page1 .img11 {
     width: 76.93%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     .page1 .img11 > img {
       width: 100%; }
+    .page1 .img11 > img:nth-child(1) {
+      animation: bling 2s linear infinite;
+      -moz-animation: bling 2s linear infinite;
+      -webkit-animation: bling 2s linear infinite;
+      -ms-animation: bling 2s linear infinite; }
+    .page1 .img11 > img:nth-child(2) {
+      position: absolute;
+      top: 12%;
+      left: 9%;
+      width: 90.81%; }
   .page1 .img12 {
     width: 81.33%;
     margin: 0 auto; }
@@ -103,9 +114,20 @@ body {
   .page2 .img21 {
     width: 72.27%;
     margin: 0 auto;
-    padding-top: 12.07%; }
+    padding-top: 12.07%;
+    position: relative; }
     .page2 .img21 > img {
       width: 100%; }
+    .page2 .img21 > img:nth-child(1) {
+      animation: bling 2s linear infinite;
+      -moz-animation: bling 2s linear infinite;
+      -webkit-animation: bling 2s linear infinite;
+      -ms-animation: bling 2s linear infinite; }
+    .page2 .img21 > img:nth-child(2) {
+      position: absolute;
+      top: 55%;
+      left: 18%;
+      width: 60.51%; }
   .page2 .img22 {
     position: absolute;
     left: 9.2%;
@@ -133,9 +155,20 @@ body {
   .page3 .img31 {
     width: 72%;
     margin: 0 auto;
-    padding-top: 12.07%; }
+    padding-top: 12.07%;
+    position: relative; }
     .page3 .img31 > img {
       width: 100%; }
+    .page3 .img31 > img:nth-child(1) {
+      animation: bling 2s linear infinite;
+      -moz-animation: bling 2s linear infinite;
+      -webkit-animation: bling 2s linear infinite;
+      -ms-animation: bling 2s linear infinite; }
+    .page3 .img31 > img:nth-child(2) {
+      position: absolute;
+      top: 55%;
+      left: 18%;
+      width: 60.51%; }
   .page3 .img32 {
     width: 59.47%;
     margin: 0 auto; }
@@ -159,9 +192,20 @@ body {
   -webkit-flex-direction: column;
   position: relative; }
   .page4 .img41 {
-    width: 94%; }
+    width: 94%;
+    position: relative; }
     .page4 .img41 > img {
       width: 100%; }
+    .page4 .img41 > img:nth-child(1) {
+      animation: bling 2s linear infinite;
+      -moz-animation: bling 2s linear infinite;
+      -webkit-animation: bling 2s linear infinite;
+      -ms-animation: bling 2s linear infinite; }
+    .page4 .img41 > img:nth-child(2) {
+      position: absolute;
+      top: 36%;
+      left: 8.5%;
+      width: 81%; }
   .page4 .p41 {
     width: 75.06%;
     font-size: 0.24rem;
@@ -332,9 +376,20 @@ body {
     -webkit-flex-direction: column; }
   #page6 .img61 {
     width: 81.87%;
-    margin-left: 6%; }
+    margin-left: 6%;
+    position: relative; }
     #page6 .img61 > img {
       width: 100%; }
+    #page6 .img61 > img:nth-child(1) {
+      animation: bling 2s linear infinite;
+      -moz-animation: bling 2s linear infinite;
+      -webkit-animation: bling 2s linear infinite;
+      -ms-animation: bling 2s linear infinite; }
+    #page6 .img61 > img:nth-child(2) {
+      position: absolute;
+      top: 12.5%;
+      left: 11.5%;
+      width: 68.73%; }
   #page6 .img62 {
     width: 100%;
     margin-top: -9%;

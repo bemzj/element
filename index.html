@@ -20,6 +20,9 @@
 		<div class="delete1" hidden="hidden"></div>
 		<div id="loading" class="page">
 			<img src="img/loading.gif" />
+			<div class="star">
+	            <img src="img/star.png" />
+	        </div>
 			<div>
 				<p class="lt1">Loading.</p>
 				<p class="lt2">0%</p>
@@ -36,7 +39,11 @@
 	            		<div class="star">
 	            			<img src="img/star.png" />
 	            		</div>
+	            		<div class="star" style="transform: rotate(180deg);">
+	            			<img src="img/star.png" />
+	            		</div>
 	            		<div class="img11 ani" swiper-animate-effect="slideInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+	            			<img src="img/page11.png"/>
 	            			<img src="img/page1.png" />
 	            		</div>
 	            		<div class="img12 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
@@ -57,6 +64,7 @@
 	            			<img src="img/star.png" />
 	            		</div>
 	            		<div class="img21 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.75s" swiper-animate-delay="0s">
+	            			<img src="img/page211.png" />
 	            			<img src="img/page21.png" />
 	            		</div>
 	            		<div class="img22 ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.75s">
@@ -76,6 +84,7 @@
 	            			<img src="img/star.png" />
 	            		</div>
 	            		<div class="img31 ani"  swiper-animate-effect="rotateInDownRight" swiper-animate-duration="1s" swiper-animate-delay="0s">
+	            			<img src="img/page311.png" />
 	            			<img src="img/page31.png" />
 	            		</div>
 	            		<div class="img32 ani"  swiper-animate-effect="rotateIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
@@ -92,6 +101,7 @@
 	            			<img src="img/star.png" />
 	            		</div>
 	            		<div class="img41 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
+	            			<img src="img/page411.png" />
 	            			<img src="img/page41.png" />
 	            		</div>
 	            		<div class="p41">
@@ -129,6 +139,7 @@
 				    			<img src="img/star.png" />
 				    		</div>
 				    		<div class="img61">
+				            	<img src="img/page611.png" />
 				            	<img src="img/page61.png" />
 				            </div>
 				            <div class="img62">
@@ -170,25 +181,7 @@
 	    
 	    <script type="text/javascript" src="js/swiper-3.4.2.min.js" ></script>
 	    <script>
-		    var swiper = new Swiper('.swiper-container', {
-		        direction: 'vertical',
-		        initialSlide :0,
-		         onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-				    swiperAnimateCache(swiper); //隐藏动画元素 
-				    swiperAnimate(swiper); //初始化完成开始动画
-				    $('.down').on('click',function(){
-				    	swiper.slideNext();
-				    });
-				  }, 
-				  onSlideChangeEnd: function(swiper){ 
-				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-				    if(swiper.isEnd){
-				    	$('.down').hide();
-				    }else{
-				    	$('.down').show();
-				    }
-				  } 
-		    });
+		    
 		    //微信加入聊天
 			function audioAutoPlay(id,v){
 				var audio = document.getElementById(id);

@@ -72,8 +72,22 @@ body{
     .img11{
         width: 76.93%;
         margin: 0 auto;
+        position: relative;
         >img{
             width:100%;
+            
+        }
+        >img:nth-child(1){
+            animation: bling 2s linear infinite;
+            -moz-animation: bling 2s linear infinite;
+            -webkit-animation: bling 2s linear infinite;
+            -ms-animation: bling 2s linear infinite;
+        }
+        >img:nth-child(2){
+            position: absolute;
+            top: 12%;
+            left: 9%;
+            width: 90.81%;
         }
     }
     .img12{
@@ -117,8 +131,21 @@ body{
         width: 72.27%;
         margin: 0 auto;
         padding-top: 12.07%;
+        position: relative;
         >img{
             width: 100%;
+        }
+        >img:nth-child(1){
+            animation: bling 2s linear infinite;
+            -moz-animation: bling 2s linear infinite;
+            -webkit-animation: bling 2s linear infinite;
+            -ms-animation: bling 2s linear infinite;
+        }
+        >img:nth-child(2){
+            position: absolute;
+            top: 55%;
+            left: 18%;
+            width: 60.51%;
         }
     }
     .img22{
@@ -155,8 +182,21 @@ body{
         width: 72%;
         margin: 0 auto;
         padding-top: 12.07%;
+        position: relative;
         >img{
             width: 100%;
+        }
+        >img:nth-child(1){
+            animation: bling 2s linear infinite;
+            -moz-animation: bling 2s linear infinite;
+            -webkit-animation: bling 2s linear infinite;
+            -ms-animation: bling 2s linear infinite;
+        }
+        >img:nth-child(2){
+            position: absolute;
+            top: 55%;
+            left: 18%;
+            width: 60.51%;
         }
     }
     .img32{
@@ -187,8 +227,21 @@ body{
     position: relative;
     .img41{
         width: 94%;
+        position: relative;
         >img{
             width: 100%;
+        }
+        >img:nth-child(1){
+            animation: bling 2s linear infinite;
+            -moz-animation: bling 2s linear infinite;
+            -webkit-animation: bling 2s linear infinite;
+            -ms-animation: bling 2s linear infinite;
+        }
+        >img:nth-child(2){
+            position: absolute;
+            top: 36%;
+            left: 8.5%;
+            width: 81%;
         }
     }
     .p41{
@@ -383,8 +436,21 @@ body{
     .img61{
         width: 81.87%;
         margin-left: 6%;
+        position: relative;
         >img{
             width: 100%;
+        }
+        >img:nth-child(1){
+            animation: bling 2s linear infinite;
+            -moz-animation: bling 2s linear infinite;
+            -webkit-animation: bling 2s linear infinite;
+            -ms-animation: bling 2s linear infinite;
+        }
+        >img:nth-child(2){
+            position: absolute;
+            top: 12.5%;
+            left: 11.5%;
+            width: 68.73%;
         }
     }
     .img62{
