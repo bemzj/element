@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   position: relative;
   width: 100%;
@@ -14,6 +15,44 @@ body {
   height: 100%;
   background: url(../img/back.jpg) no-repeat center center;
   background-size: 100% 100%; }
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; }
+  #loading > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
+  #loading > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column; }
+    #loading > div > p:nth-child(1) {
+      margin-top: 0.4rem; }
+  #loading p {
+    font-size: 0.28rem;
+    color: white;
+    text-align: center;
+    line-height: 0.4rem;
+    font-family: "微软雅黑"; }
 
 .page1 {
   display: flex;

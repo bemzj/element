@@ -1,4 +1,27 @@
 $(function(){
+	var time = 0;
+	var n = 0;
+	var loadText = ["Loading.","Loading..","Loading..."];
+	var tTween = setInterval(function(){
+		time++;
+		if(time==101)
+		{
+			clearInterval(tTween);
+			$('#loading').fadeOut(500);
+		}else{
+			if(time%20==0)
+			{
+				n++;
+				if(n==3)
+				{
+					n=0;
+				}
+				$('.lt1').text(loadText[n]);
+			}
+			
+			$('.lt2').text(time+'%');
+		}
+	},30);
 //	popWin("请输入正确的手机号码");
 	$('.delete1').prevAll().remove();
 	$('.delete2').nextAll().remove();
